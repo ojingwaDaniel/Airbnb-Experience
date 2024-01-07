@@ -1,6 +1,6 @@
 .App {
-  width: 550px;
-  height: 853px;
+  width: 600px;
+  height: 100%;
   border-radius: 8.95px;
 }
 .nav-bar {
@@ -29,7 +29,7 @@
   position: relative;
   left: 77px;
 }
-section p {
+.hero p {
   color: #222;
   font-family: Poppins;
   font-size: 16px;
@@ -39,4 +39,13 @@ section p {
   width: 320px;
   height: 56px;
   margin-left: 26px;
+}
+.cards{
+  margin-left: 26px;
+}
+.cards img{
+  width: 176px;
+  height: 235px;
+  padding:3px
+
 }
