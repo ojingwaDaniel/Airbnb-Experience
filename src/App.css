@@ -3,6 +3,9 @@
   height: 100vw;
   border-radius: 8.95px;
 }
+.grey{
+  color: #918E9B;
+}
 .nav-bar {
   width: 550px;
   height: 70px;
@@ -48,7 +51,11 @@
   height: 235px;
   padding: 3px;
 }
-.cards .star {
+.cards .star{
   width: 10px;
   height: 14px;
+}
+.card--stat{
+  display: flex;
+  align-items: center;
 }

@@ -7,11 +7,11 @@ export default function Cards() {
   return (
     <div className="cards">
       <img src={Img1} alt="" />
-      <div>
+      <div className="card--stat">
         <img src={star} alt="" className="star" />
         <span>5.0</span>
-        <span>(6) .</span>
-        <span>USA</span>
+        <span className="grey">(6) .</span>
+        <span className="grey">USA</span>
       </div>
       <p>Life lessons with Katie Zaferes</p>
       <p>From $136 / person</p>
