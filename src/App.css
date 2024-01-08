@@ -40,12 +40,29 @@
   height: 56px;
   margin-left: 26px;
 }
-.cards{
+.cards {
+  display: flex;
   margin-left: 26px;
 }
-.cards img{
-  width: 176px;
+.cards img {
+  width: 100px;
   height: 235px;
-  padding:3px
-
+  padding: 3px;
+}
+.cards .star {
+  width: 10px;
+  height: 14px;
+  margin-top: 0px;
+}
+.cards div span {
+  color: #222;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 110%; /* 13.2px */
+  margin-bottom: 100px;
+}
+.cards .details{
+  display: flex;
 }
