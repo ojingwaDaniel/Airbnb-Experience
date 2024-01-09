@@ -3,6 +3,9 @@
   height: 100vw;
   border-radius: 8.95px;
 }
+.bold{
+  font-weight: bold;
+}
 .grey{
   color: #918E9B;
 }
