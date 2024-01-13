@@ -1,21 +1,19 @@
-import Img1 from "./images/image 12.png"
-import Img2 from "./images/wedding-photography 1.png";
-import Img3 from "./images/mountain-bike 1.png";
+
 import star from './images/Star 1.png'
 
-export default function Cards() {
+export default function Cards({img,rating,reviewCount,country,title,price}) {
   return (
     <div className="cards">
-      <img src={Img1} alt="" />
+      <img src={img} alt="" />
       <div className="card--stat">
         <img src={star} alt="" className="star" />
-        <span>5.0</span>
-        <span className="grey">(6) .</span>
-        <span className="grey">USA</span>
+        <span>{rating}</span>
+        <span className="grey">({reviewCount}) .</span>
+        <span className="grey">{country }</span>
       </div>
-      <p>Life lessons with Katie Zaferes</p>
+      <p>{title}</p>
       <p>
-        <span className="bold">From $136</span> / person
+        <span className="bold">From ${ price}</span> / person
       </p>
     </div>
   );
