@@ -6,6 +6,19 @@ import Img1 from "./components/images/image 12.png";
 import Img2 from "./components/images/wedding-photography 1.png";
 import Img3 from "./components/images/mountain-bike 1.png";
 function App() {
+  const nums = [1, 2, 3, 4, 5];
+  const square = nums.map((num) => num * num);
+  console.log(square);
+  const names = ["daniel", "abigail", "obed", "anselm", "governor", "chinaza"];
+  const capitalized = names.map(Capitalized);
+  
+  function Capitalized(name) {
+    return (
+      name.charAt(0).toUpperCase() + name.slice(1)
+    )
+  }
+  console.log(capitalized);
+  
   return (
     <div className="App">
       <NavBar />
