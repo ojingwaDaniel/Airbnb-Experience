@@ -1,15 +1,16 @@
 
 import star from './images/Star 1.png'
 
-export default function Cards({img,rating,reviewCount,country,title,price}) {
+export default function Cards({img,rating,reviewCount,location,title,price,description,openSpots}) {
   return (
     <div className="cards">
-      <img src={img} alt="" />
+      {openSpots === 0 && <div className='card--badge'>SOLD OUT</div>}
+      <img src= {img} alt="" />
       <div className="card--stat">
         <img src={star} alt="" className="star" />
         <span>{rating}</span>
         <span className="grey">({reviewCount}) .</span>
-        <span className="grey">{country }</span>
+        <span className="grey">{location }</span>
       </div>
       <p>{title}</p>
       <p>

@@ -13,7 +13,6 @@
   width: 550px;
   height: 70px;
   background-color: #fff;
-
   box-shadow: 0px 2.983px 7.456px rgba(0, 0, 0, 0.1);
 }
 .nav-bar img {
@@ -26,9 +25,7 @@
   color: #000;
   font-family: Poppins;
   font-size: 36px;
-  font-style: normal;
   font-weight: 600;
-  line-height: 110%; /* 39.6px */
   margin-left: 26px;
 }
 .hero img {
@@ -39,16 +36,26 @@
   color: #222;
   font-family: Poppins;
   font-size: 16px;
-  font-style: normal;
   font-weight: 300;
-  line-height: 110%; /* 17.6px */
   width: 320px;
   height: 56px;
   margin-left: 26px;
 }
-.cards {
-  margin-left: 26px;
+.cards{
+    width: 175px;
+    font-size: 12px;
+    position: relative;
 }
+.cards-list {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    
+}
+section{
+  padding: 20px;
+}
+ 
 .cards img {
   width: 170px;
   height: 235px;
@@ -61,4 +68,13 @@
 .card--stat{
   display: flex;
   align-items: center;
+}
+.card--badge{
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
 }
