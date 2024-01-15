@@ -1,7 +1,7 @@
 
 import star from './images/Star 1.png'
 
-export default function Cards({img,rating,reviewCount,location,title,price,description,openSpots}) {
+export default function Cards({img,rating,reviewCount,location,title,price,openSpots}) {
   return (
     <div className="cards">
       {openSpots === 0 && <div className='card--badge'>SOLD OUT</div>}
