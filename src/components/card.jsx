@@ -1,10 +1,16 @@
 
 import star from './images/Star 1.png'
 
-export default function Cards({img,rating,reviewCount,location,title,price,openSpots}) {
+export default function Cards({ img, rating, reviewCount, location, title, price, openSpots }) {
+  let badgeText
+  if (openSpots === 0 ) {
+    badgeText = 'SOLD OUT'
+  }else if (location == 'Online') {
+    badgeText = 'ONLINE'
+  }
   return (
     <div className="cards">
-      {openSpots === 0 && <div className='card--badge'>SOLD OUT</div>}
+      {badgeText && <div className='card--badge'>{badgeText}</div>}
       <img src= {img} alt="" />
       <div className="card--stat">
         <img src={star} alt="" className="star" />
