@@ -1,26 +1,26 @@
 
 import star from './images/Star 1.png'
 
-export default function Cards({ img, rating, reviewCount, location, title, price, openSpots }) {
+export default function Cards(props) {
   let badgeText
-  if (openSpots === 0 ) {
+  if (props.item.openSpots === 0) {
     badgeText = 'SOLD OUT'
-  }else if (location == 'Online') {
+  } else if (props.item.location === 'Online') {
     badgeText = 'ONLINE'
   }
   return (
-    <div className="cards">
+    <div className="cards" key={props.key}>
       {badgeText && <div className='card--badge'>{badgeText}</div>}
-      <img src= {img} alt="" />
+      <img src={props.item.coverImg} alt="" />
       <div className="card--stat">
         <img src={star} alt="" className="star" />
-        <span>{rating}</span>
-        <span className="grey">({reviewCount}) .</span>
-        <span className="grey">{location }</span>
+        <span>{props.item.stats.rating}</span>
+        <span className="grey">({props.item.stats.reviewCount}) .</span>
+        <span className="grey">{props.item.location}</span>
       </div>
-      <p>{title}</p>
+      <p>{props.item.title}</p>
       <p>
-        <span className="bold">From ${ price}</span> / person
+        <span className="bold">From ${props.item.price}</span> / person
       </p>
     </div>
   );

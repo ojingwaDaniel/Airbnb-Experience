@@ -8,14 +8,7 @@ function App() {
     return (
       <Cards
         key={item.id}
-        img={item.coverImg}
-        title={item.title}
-        description={item.description}
-        price={item.price}
-        reviewCount={item.stats.reviewCount}
-        rating={item.stats.rating}
-        location={item.location}
-        openSpots = {item.openSpots}
+      item = {item}
       />
     );
   });
